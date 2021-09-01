@@ -5,19 +5,20 @@
 .header-nav {
   display: flex;
   align-items: center;
-}
-.header-nav__link {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  text-decoration: none;
-  color: $accent;
-  margin-right: 93px;
-}
-.header-nav__logo {
-  color: $title-black;
+
+  &__link {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    color: $accent;
+    margin-right: 93px;
+  }
+  &__logo {
+    color: $title-black;
+  }
 }
 .header-list {
   display: flex;
@@ -71,41 +72,42 @@
   & :not(:first-child) {
     padding-left: 50px;
   }
-}
-.header-contacts__link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 
-  color: $text-color;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  &:hover {
-    color: $accent;
+    color: $text-color;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
   }
-}
 
-.header-contacts__envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
+  &__envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
 
-  &:hover {
-    fill: $accent;
+    &:hover {
+      fill: $accent;
+    }
   }
-}
-.header-contacts__smartphone {
-  width: 10px;
-  height: 16px;
-  fill: currentColor;
-  margin-right: 10px;
+  &__smartphone {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
 
-  &:hover {
-    fill: $accent;
+    &:hover {
+      fill: $accent;
+    }
   }
 }
